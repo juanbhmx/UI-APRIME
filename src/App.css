@@ -14,15 +14,101 @@
 }
 
 @media only screen and (max-width: 786px) {
-  .principal {
-    height: 100% !important;
+  body{
+    background-color: var(--fondo) !important;
+  }
 
+  .subchild {
+    position: absolute !important;
+    margin-top: 20px !important;
+    margin-left: 20px !important;
+    flex-direction: column !important;
   }
 
   .secundario img {
-    height: auto !important;
+    overflow: hidden !important;
+    /* height: 50vh !important; */
   }
 
+  .perfiluser{
+    margin-bottom: -20px !important;
+    margin-top: -15px !important;
+    
+  }
+
+  .titulo {
+    color: var(--texto);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: .2em;
+    font-size: 20px !important;
+    font-weight: bold;
+  }
+  
+  .letrasblancas {
+    color: var(--texto);
+    font-size: 10px !important;
+  }
+  
+  .linetwo {
+    margin-top: 5px !important;
+    display: flex;
+    font-size: 10px !important;
+  }
+  
+  .description {
+    margin: 3px !important;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px !important;
+  }
+  
+  .footer {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: bold !important;
+    display: flex !important;
+    justify-content: end !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+    margin-top: -10px;
+  }
+  
+  .position {
+    font-weight: bold !important;
+    font-size: larger !important;
+  }
+
+  h3 {
+    color: var(--h3);
+  }
+  
+  h5 {
+    color: var(--texto);
+    letter-spacing: .2em !important;
+    font-size: 10px !important;
+  
+  }
+  .d-flex{
+    justify-content: center !important
+  }
+
+  .numeros {
+    font-size: 0px !important;
+    font-weight: bold !important;
+    font-family: 'Rubik Mono One', sans-serif !important;
+  }
+
+  .nextui-c-cakKrd {
+    background-color: var(--fondo) !important;
+  }
+  
+  .nextui-c-PJLV {
+    display: flex !important;
+    align-items: center !important;
+    justify-content:center !important ;
+    font-size: 10px;
+    color: var(--texto) !important;
+  }
 }
 
 
@@ -39,6 +125,13 @@
     backdrop-filter: blur(100px);
     background-color: var(--fondo);
   }
+  .nextui-c-kRHeuF-ienfGvA-css{
+    justify-content: space-around !important;
+  }
+  
+
+
+
 }
 
 .principal {
