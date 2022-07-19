@@ -1,38 +1,153 @@
+:root {
+  --fondo: rgb(10, 0, 23);
+  --texto: rgb(233, 233, 233);
+  --h3: aqua;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
 .App {
-  text-align: center;
+  height: 100vh !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media only screen and (max-width: 786px) {
+  .principal {
+    height: 100% !important;
+
+  }
+
+  .secundario img {
+    height: auto !important;
+  }
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.colorsidenav,
+.nav-link {
+  background-color: var(--fondo);
+  color: var(--texto) !important;
+  z-index: 0;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .colorsidenav {
+    -webkit-backdrop-filter: blur(80px);
+    backdrop-filter: blur(100px);
+    background-color: var(--fondo);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.principal {
+  position: relative;
+  height: 100% !important;
+  z-index: 1;
+}
+
+.secundario img {
+  height: 100%;
+  /* position: relative; */
+}
+
+
+.subchild {
+  position: absolute;
+  margin: 40px;
   flex-direction: column;
-  align-items: center;
+}
+
+h3 {
+  color: var(--h3);
+}
+
+h5 {
+  color: var(--texto);
+  letter-spacing: .3em;
+
+}
+
+.titulo {
+  color: var(--texto);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: .2em;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.letrasblancas {
+  color: var(--texto);
+}
+
+.linetwo {
+  margin-top: 15px;
+  display: flex;
+}
+
+.description {
+  margin: 15px;
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+
+.footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.position {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.nextui-c-jxECYO,
+.nextui-c-cakKrd {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column-reverse;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nextui-c-cakKrd {
+  background-color: var(--fondo) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nextui-c-PJLV {
+  color: var(--texto) !important;
+}
+
+.numeros {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.nextui-c-BDLTQ {
+  box-shadow: rgba(0, 0, 0, 0.242) -50px -10px 50px;
+  border: var(--texto) !important;
+  border: #fff solid;
+  border-radius: 10px;
+}
+.nextui-c-BDLTQ:hover{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.perfiluser{
+  display:flex ;
+  align-items: flex-start;
+  /* background-color: #ffffff; */
+  margin-bottom: 220px;
+  margin-top: 30px;
+}
+
+.footer{
+  margin-bottom: 150px;
 }
